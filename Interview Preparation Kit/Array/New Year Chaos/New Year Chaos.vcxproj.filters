@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="NewYearChaos.cpp">
+    <ClCompile Include="2018_08_03.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
