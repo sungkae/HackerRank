@@ -2,24 +2,19 @@
 #include <vector>
 #include <fstream>
 
+
 using namespace std;
 
 // Complete the hourglassSum function below.
 int hourglassSum(vector<vector<int>> arr) {
-	int max = 0, sum = 0, height = 0, width = 0;
-	for (int i = 0; i < arr.size() - 2; i++) {
-		for (int j = 0; j < arr.size() - 2; j++) {
-			for (int k = 0; k<3; k++) {
-				sum += arr[i][j + k];
-				sum += arr[i + 2][j + k];
-			}
-			sum += arr[i + 1][j + 1];
-			if (sum > max)
-				max = sum;
-			sum = 0;
+	int sum = 0, max = -10000;
+	for (int i = 0; i< arr.size() - 2; i++) {
+		for (int j = 0; j< arr.size() - 2; j++) {
+			sum = arr[i][j] + arr[i][j + 1] + arr[i][j + 2] + arr[i + 1][j + 1] + arr[i + 2][j] + arr[i + 2][j + 1] 
+					+ arr[i + 2][j + 2];
+			if (max < sum) max = sum;
 		}
 	}
-
 	return max;
 }
 
