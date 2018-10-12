@@ -20,8 +20,8 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{873C5437-FCB8-4FBB-9FF7-9D35CA9901C9}</ProjectGuid>
-    <RootNamespace>RunningTimeandComplexity</RootNamespace>
+    <ProjectGuid>{788C8AD0-635D-4768-82E6-48D6A8CFB34D}</ProjectGuid>
+    <RootNamespace>NestedLogic</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
